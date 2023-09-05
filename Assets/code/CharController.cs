@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class CharController : MonoBehaviour
 {
-    public float speed = 0.05f; //キャラクターのスピード
+    private Rigidbody2D rigidbody2D; 
+
+    public float jumpForce = 200f; //ジャンプの高さ
+
+    public int MaxJumpcount = 2;
+    private int jumpcount = 0;
+
+    public float speed= 0.05f; //キャラクターのスピード
     public int slow = 5;　//キャラクターのスピードのコントロール用
 
     //キャラクターコントローラー
