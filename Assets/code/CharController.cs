@@ -34,11 +34,7 @@ public class CharController : MonoBehaviour
                 *
                 jumpForce);
             jumpcount++;
-        }
-       
-        if (Input.GetKey("s"))
-        {
-            position.y -= speed / slow;
+
         }
         if (Input.GetKey("a"))
         {
@@ -48,7 +44,6 @@ public class CharController : MonoBehaviour
         {
             position.x += speed / slow;
         }
-
         transform.position = position;
     }
 
